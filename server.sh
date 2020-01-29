@@ -5,5 +5,5 @@ while read line
                 pass=`echo "$line" | cut -d " " -f3`
                 sshpass -p "$pass" scp /home/ansadmin/test.yml "$user"@"$host":/home/ansadmin
 
-        done < /var/lib/jenkins/workspace/Test1/user.log
+        done < /home/ansadmin/user.log
 
